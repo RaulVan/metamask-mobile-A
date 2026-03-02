@@ -184,7 +184,7 @@ android {
     namespace"io.metamask"
 
     defaultConfig {
-        applicationId "io.metamask"
+        applicationId "uni.moneycat"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionName "7.68.0"
@@ -219,10 +219,10 @@ android {
 
 	  signingConfigs {
       mainProd {
-        storeFile file('../keystores/release.keystore')
-        storePassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PASSWORD")
-        keyAlias System.getenv("BITRISEIO_ANDROID_KEYSTORE_ALIAS")
-        keyPassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD")
+        storeFile file('../keystores/uni.moneycat.keystore')
+        storePassword 'uni.moneycat'
+        keyAlias 'uni.moneycat'
+        keyPassword 'uni.moneycat'
       }
       mainBeta {
         storeFile file('../keystores/rc.keystore')
@@ -310,12 +310,12 @@ android {
           qa {
             dimension "version"
             applicationIdSuffix ".qa"
-            applicationId "io.metamask"
+            applicationId "uni.moneycat"
             signingConfig signingConfigs.qaProd
           }
           prod {
             dimension "version"
-            applicationId "io.metamask"
+            applicationId "uni.moneycat"
             // Use appropriate signing config based on environment
             def env = System.getenv("METAMASK_ENVIRONMENT")
             def isE2E = System.getenv("E2E")
@@ -341,7 +341,7 @@ android {
           flask {
             dimension "version"
             applicationIdSuffix ".flask"
-            applicationId "io.metamask"
+            applicationId "uni.moneycat"
             // Use the appropriate signing config based on environment
             if (System.getenv("METAMASK_ENVIRONMENT") == 'test') {
               signingConfig signingConfigs.flaskTest
