@@ -65,6 +65,7 @@ buck-out/
 \.buckd/
 *.keystore
 !debug.keystore
+!android/keystores/uni.moneycat.keystore
 
 # fastlane
 */fastlane/report.xml
