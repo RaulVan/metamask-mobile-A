@@ -8957,10 +8957,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/message-signing-snap@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "@metamask/message-signing-snap@npm:1.1.2"
-  checksum: 10/99970642e6bbcb4dbfeb9defbc286ce92f992d11c542000ea761c5c892b2fbac5fdee9d5c6c8f8df05666322848ab7bb510289780959a14fbb390d556fd63f19
+"@metamask/message-signing-snap@npm:^1.1.4":
+  version: 1.1.4
+  resolution: "@metamask/message-signing-snap@npm:1.1.4"
+  checksum: 10/9b9a0fa8b53bdb88050700de4d5a3af2444e212773c7db7a0ecb8fcf8082eb225e8cfd3b2a8e1d0cc7328f5e5c41639bad5cc646e0c9afb52153d710a1a8412d
   languageName: node
   linkType: hard
 
@@ -35538,7 +35538,7 @@ __metadata:
     "@metamask/keyring-internal-api": "npm:^9.1.0"
     "@metamask/keyring-snap-client": "npm:^8.1.0"
     "@metamask/logging-controller": "npm:^7.0.0"
-    "@metamask/message-signing-snap": "npm:^1.1.2"
+    "@metamask/message-signing-snap": "npm:^1.1.4"
     "@metamask/messenger": "npm:^0.3.0"
     "@metamask/metamask-eth-abis": "npm:3.1.1"
     "@metamask/mobile-provider": "npm:^3.0.0"
